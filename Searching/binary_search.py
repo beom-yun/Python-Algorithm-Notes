@@ -1,3 +1,5 @@
+# 이진탐색은 전제 조건이 데이터 정렬이다
+
 # 재귀함수로 구현한 이진탐색
 # array 안에 찾고자 하는 값(target)이 있으면 해당 인덱스 반환, 없으면 None 반환
 def recursive_binary_search(array, target, start, end):
