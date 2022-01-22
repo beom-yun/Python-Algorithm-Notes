@@ -189,7 +189,7 @@ ___
 
   * `탑다운(Top-Down)` `메모이제이션` 재귀 함수를 이용하여 큰 문제를 해결하기 위해 작은 문제를 호출
 
-  * `보텀업(Bottom-Up)` 단순히 반복문을 이용하여 작은 문제부터 차근차근 답을 도출. 결과 저장용 리스트는 **‘DP 테이블’**이라 부른다.
+  * `보텀업(Bottom-Up)` 단순히 반복문을 이용하여 작은 문제부터 차근차근 답을 도출. 결과 저장용 리스트는 **DP 테이블**이라 부른다.
 
 ___
 
@@ -221,14 +221,26 @@ ___
 
 * 파이썬에서 큐를 구현할 때는 collections 모듈에서 제공하는 deque 자료구조 활용
 
-```python
-From collections import deque
+  ```python
+  from collections import deque
+  
+  q = deque()
+  q.append(3)
+  q.popleft()
+  q.reverse()
+  ```
 
-q = deque()
-q.append(3)
-q.popleft()
-q.reverse()
-```
+### 우선순위 큐(Priority Queue)
+
+* 가장 우선순위가 높은 데이터를 가장 먼저 삭제
+
+* 대부분 프로그래밍 언어에서(파이썬 포함) 우선순위 큐 라이브러리에 데이터의 묶음을 넣으면, 첫 번째 원소를 기준으로 우선순위를 설정한다.
+
+* 파이썬 라이브러리에서는 기본적으로 **최소 힙(Min Heap)** 구조(값이 낮은 데이터가 먼저 삭제)
+
+  ```python
+  import heapq
+  ```
 
 ### 재귀 함수(Recursive Function)
 
