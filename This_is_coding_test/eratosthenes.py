@@ -1,4 +1,5 @@
 # 에라토스테네스의 체
+# 2 부터 n 까지의 소수 반환
 
 def solution(n):
     num = set(range(2, n + 1))
