@@ -268,7 +268,7 @@ ___
 
 ___
 
-## 8. 중요한 파이썬 표준 라이브러리
+## 8. 중요한 파이썬 표준 라이브러리 & 알면 좋은 함수
 
 ### 내장함수
 
@@ -281,3 +281,13 @@ ___
 ### collections
 
 ### math
+
+  ```python
+  string = 'abcde'
+  s1 = string.rjust(10, 'A')
+  s2 = string.ljust(7, 'Z')
+  print(s1)
+  print(s2)
+  # AAAAAabcde
+  # abcdeZZ
+  ```
